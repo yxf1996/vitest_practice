@@ -1,0 +1,29 @@
+{
+  "name": "vitest-browsermode-vs-playwright",
+  "version": "1.0.0",
+  "description": "Vitest Browser Mode vs Playwright E2E 对比测试",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:browser": "vitest --config vitest.browser.config.ts",
+    "test:e2e": "playwright test",
+    "test:all": "npm run test:run && npm run test:browser && npm run test:e2e",
+    "test:perf": "playwright test tests/e2e/performance.spec.ts",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "@vitest/browser-playwright": "^4.1.10",
+    "playwright": "^1.61.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.1.5",
+    "vitest": "^4.1.10",
+    "vitest-browser-vue": "^2.1.0",
+    "vue": "^3.5.40",
+    "vue-router": "^5.2.0"
+  }
+}
